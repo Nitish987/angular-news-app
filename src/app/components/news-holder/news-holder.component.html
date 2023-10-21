@@ -1,0 +1,10 @@
+<div class="container mt-5">
+    <div *ngIf="!isLoading; else loading" class="news-component-holder">
+        <app-news *ngFor="let news of newsItems" [news]="news" />
+    </div>
+    <ng-template #loading>
+        <div class="loading">
+            <mat-spinner>Loading...</mat-spinner>
+        </div>
+    </ng-template>
+</div>

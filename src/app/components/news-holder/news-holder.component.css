@@ -1,0 +1,11 @@
+.news-component-holder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;   
+}
